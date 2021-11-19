@@ -9,6 +9,7 @@
 		margin-top: 2rem;
 
 		.circle {
+			margin-top: 2rem;
 			width: 6rem;
 			height: 6rem;
 			background-color: #bbb;
@@ -17,10 +18,11 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			margin-top: 2rem;
 
 			p {
-				font-size: 50px;
+				font-size: 40px;
+				line-height: 6rem;
+				margin: 0;
 			}
 		}
 
