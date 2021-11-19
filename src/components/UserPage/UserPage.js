@@ -7,8 +7,6 @@ export default function UserPage({ data }) {
 	const { username } = useParams();
 	const dataRender = data.filter((dt) => dt.username === username)[0];
 
-	console.log(dataRender);
-
 	return (
 		<Container>
 			<Alert variant={'info'} className={styles.content}>

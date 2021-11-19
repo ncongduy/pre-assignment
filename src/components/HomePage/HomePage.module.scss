@@ -1,38 +1,43 @@
-.content {
+.container {
 	margin-bottom: 3rem;
 	text-align: center;
 
-	.card {
+	.wrapContent {
 		display: flex;
 		justify-content: center;
-		align-items: center;
-		margin-top: 2rem;
 
-		.circle {
-			margin-top: 2rem;
-			width: 6rem;
-			height: 6rem;
-			background-color: #bbb;
-			border-radius: 50%;
-			display: inline-block;
+		.card {
 			display: flex;
-			align-items: center;
 			justify-content: center;
+			align-items: center;
+			margin-top: 2rem;
 
-			p {
-				font-size: 40px;
-				line-height: 6rem;
-				margin: 0;
+			.circle {
+				margin-top: 2rem;
+				width: 6rem;
+				height: 6rem;
+				background-color: #bbb;
+				border-radius: 50%;
+				display: inline-block;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				p {
+					font-size: 40px;
+					line-height: 6rem;
+					margin: 0;
+				}
 			}
-		}
 
-		.widthButton {
-			width: 100%;
-			margin-bottom: 1rem;
+			.widthButton {
+				width: 100%;
+				margin-bottom: 1rem;
 
-			.link {
-				color: #fff;
-				text-decoration: none;
+				.link {
+					color: #fff;
+					text-decoration: none;
+				}
 			}
 		}
 	}
