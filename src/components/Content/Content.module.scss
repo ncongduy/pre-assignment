@@ -1,0 +1,32 @@
+.content {
+	margin-bottom: 3rem;
+	text-align: center;
+
+	.card {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 2rem;
+
+		.circle {
+			width: 6rem;
+			height: 6rem;
+			background-color: #bbb;
+			border-radius: 50%;
+			display: inline-block;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-top: 2rem;
+
+			p {
+				font-size: 50px;
+			}
+		}
+
+		.widthButton {
+			width: 100%;
+			margin-bottom: 1rem;
+		}
+	}
+}
