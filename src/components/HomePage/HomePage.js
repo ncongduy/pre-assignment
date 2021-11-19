@@ -1,10 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
-import styles from './Content.module.scss';
+import styles from './HomePage.module.scss';
 
-export default function Content({ data }) {
-	console.log(data);
-
+export default function HomePage({ data }) {
 	return (
 		<div>
 			<Container className={styles.content}>
@@ -29,12 +28,17 @@ export default function Content({ data }) {
 											http://{dt.website}
 										</a>
 									</Card.Text>
-									<Button
-										variant='primary'
-										className={styles.widthButton}
+									<Link
+										to={`/user/${dt.username}`}
+										className={styles.link}
 									>
-										More Details
-									</Button>
+										<Button
+											variant='primary'
+											className={styles.widthButton}
+										>
+											More Details
+										</Button>
+									</Link>
 								</Card.Body>
 							</Card>
 						</Col>

@@ -1,5 +1,10 @@
 import { useState, useEffect } from 'react';
-import { Navbar, Content } from './components';
+import { Routes, Route } from 'react-router-dom';
+import { Container } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import styles from './App.module.scss';
+import { Navbar, HomePage, UserPage } from './components';
 
 function App() {
 	const [data, setData] = useState([]);
@@ -13,9 +18,17 @@ function App() {
 	}, []);
 
 	return (
-		<div>
-			<Navbar />
-			<Content />
+		<div className={styles.App}>
+			<Container>
+				<Navbar />
+				<Routes>
+					<Route path='/' element={<HomePage data={data} />} />
+					<Route
+						path='/user/:username'
+						element={<UserPage data={data} />}
+					/>
+				</Routes>
+			</Container>
 		</div>
 	);
 }
