@@ -1,0 +1,26 @@
+.navbar {
+	span {
+		display: flex;
+		justify-content: center;
+		padding: 0.5rem;
+		width: 100px;
+
+		&:hover {
+			cursor: pointer;
+			opacity: 0.8;
+			color: #fff;
+			background-color: #161e2a;
+		}
+
+		.icon {
+			font-size: 22px;
+			margin-right: 5px;
+		}
+
+		p {
+			font-size: 16px;
+			font-weight: 500;
+			margin: 0;
+		}
+	}
+}
