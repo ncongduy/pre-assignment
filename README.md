@@ -18,6 +18,8 @@ Navigate to http://localhost:3000/ in your browser.
 
 ## Deployment
 
+https://suspicious-perlman-9b49f3.netlify.app/
+
 ## Author
 
 Code is created by Nguyen Cong Duy.
