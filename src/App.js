@@ -18,8 +18,8 @@ function App() {
 	}, []);
 
 	return (
-		<div className={styles.App}>
-			<Container>
+		<Container>
+			<div className={styles.App}>
 				<Navbar />
 				<Routes>
 					<Route path='/' element={<HomePage data={data} />} />
@@ -28,8 +28,8 @@ function App() {
 						element={<UserPage data={data} />}
 					/>
 				</Routes>
-			</Container>
-		</div>
+			</div>
+		</Container>
 	);
 }
 
