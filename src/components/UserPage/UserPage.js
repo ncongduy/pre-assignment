@@ -5,6 +5,13 @@ import styles from './UserPage.module.scss';
 
 export default function UserPage({ data }) {
 	const { username } = useParams();
+
+	// validate data
+	if (data.length === 0) {
+		return <div>Loading</div>;
+	}
+
+	// filter data
 	const dataRender = data.filter((dt) => dt.username === username)[0];
 
 	return (
